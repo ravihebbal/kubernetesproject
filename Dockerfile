@@ -1,5 +1,4 @@
-FROM amazonlinux
-MAINTAINER ravi.hebbal07@gmail.com 
+FROM amazonlinux 
 RUN yum install httpd -y
 RUN yum install zip -y 
 RUN yum install unzip -y
