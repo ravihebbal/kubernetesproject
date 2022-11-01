@@ -1,8 +1,8 @@
 FROM amazonlinux
 MAINTAINER ravi.hebbal07@gmail.com 
 RUN yum install httpd -y
-    yum install zip -y 
-    yum install unzip -y
+RUN yum install zip -y 
+RUN yum install unzip -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page284/pet-shop.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip pet-shop.zip
